@@ -89,7 +89,6 @@ def main():
         sys.exit(1)
 
     docket_id = sys.argv[1]  # Get docket_id from command line
-    print(f"docket_id: '{docket_id}'")
     bucket_name = "mirrulations"
     s3 = boto3.resource(service_name="s3", region_name="us-east-1")
 
